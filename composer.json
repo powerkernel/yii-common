@@ -1,0 +1,30 @@
+{
+    "name": "powerkernel/yii-common",
+    "description": "Yii Common",
+    "type": "yii2-module",
+    "keywords": ["yii2","common"],
+    "license": "Private",
+    "authors": [
+        {
+            "name": "Harry Tang",
+            "email": "harry@powerkernel.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "powerkernel\\common\\": "src"
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
