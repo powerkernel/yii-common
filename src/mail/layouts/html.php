@@ -82,7 +82,7 @@ use yii\helpers\Html;
                         <tr style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px;">
                             <td class="aligncenter" style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; vertical-align: top; text-align: center; font-size: 12px; color: #999;" valign="top" align="center">
                                 <?php foreach (Yii::$app->params['organization']['social'] as $social=>$info):?>
-                                    <a class="social" href="<?= $info['url'] ?>" style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; text-decoration: underline; font-size: 12px; color: #999; padding: 0 5px;"><img height="32" src="<?= $info['icon'] ?>" alt="<?= $social ?>" style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; max-width: 100%;"></a>
+                                    <a class="social" href="<?= $info['url'] ?>" style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; text-decoration: underline; font-size: 12px; color: #999; padding: 0 5px;"><img height="24" src="<?= $info['icon'] ?>" alt="<?= $social ?>" style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; max-width: 100%;"></a>
                                 <?php endforeach;?>
                             </td>
                         </tr>

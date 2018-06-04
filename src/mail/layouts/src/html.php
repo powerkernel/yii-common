@@ -82,7 +82,7 @@ use yii\helpers\Html;
                         <tr>
                             <td class="aligncenter">
                                 <?php foreach (Yii::$app->params['organization']['social'] as $social=>$info):?>
-                                    <a class="social" href="<?= $info['url'] ?>"><img height="32" src="<?= $info['icon'] ?>" alt="<?= $social ?>" /></a>
+                                    <a class="social" href="<?= $info['url'] ?>"><img height="24" src="<?= $info['icon'] ?>" alt="<?= $social ?>" /></a>
                                 <?php endforeach;?>
                             </td>
                         </tr>
