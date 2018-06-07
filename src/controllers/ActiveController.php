@@ -9,6 +9,8 @@ namespace powerkernel\yiicommon\controllers;
 
 
 use yii\filters\auth\HttpBasicAuth;
+use yii\filters\ContentNegotiator;
+use yii\web\Response;
 
 class ActiveController extends \yii\rest\ActiveController
 {
@@ -28,7 +30,12 @@ class ActiveController extends \yii\rest\ActiveController
     public function behaviors()
     {
         $behaviors = parent::behaviors();
-
+        $behaviors['contentNegotiator'] = [
+            '__class' => ContentNegotiator::class,
+            'formats' => [
+                'application/json' => Response::FORMAT_JSON,
+            ],
+        ];
         $behaviors['corsFilter'] = [
             '__class' => \yii\filters\Cors::class,
         ];

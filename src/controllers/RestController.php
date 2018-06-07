@@ -7,8 +7,6 @@
 
 namespace powerkernel\yiicommon\controllers;
 
-use yii\filters\Cors;
-
 /**
  * Class RestController
  * @package powerkernel\yiicommon\controllers
@@ -23,9 +21,18 @@ class RestController extends \yii\rest\Controller
     public function behaviors()
     {
         $behaviors = parent::behaviors();
+
         $behaviors['corsFilter'] = [
-            '__class' => Cors::class,
+            '__class' => \yii\filters\Cors::class,
         ];
+
+        $behaviors['contentNegotiator'] = [
+            '__class' => \yii\filters\ContentNegotiator::class,
+            'formats' => [
+                'application/json' => \yii\web\Response::FORMAT_JSON,
+            ],
+        ];
+
         return $behaviors;
     }
 
