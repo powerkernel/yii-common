@@ -7,12 +7,27 @@
 
 namespace powerkernel\yiicommon\controllers;
 
+use yii\filters\Cors;
+
 /**
  * Class RestController
  * @package powerkernel\yiicommon\controllers
  */
 class RestController extends \yii\rest\Controller
 {
+
+    /**
+     * @inheritdoc
+     * @return array
+     */
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['corsFilter'] = [
+            '__class' => Cors::class,
+        ];
+        return $behaviors;
+    }
 
     /**
      * @param $action
