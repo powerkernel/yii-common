@@ -14,6 +14,8 @@ namespace powerkernel\yiicommon\controllers;
 class RestController extends \yii\rest\Controller
 {
 
+    public $enableCsrfValidation = false;
+
     /**
      * @inheritdoc
      * @return array

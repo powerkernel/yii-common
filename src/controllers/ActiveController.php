@@ -14,6 +14,9 @@ use yii\web\Response;
 
 class ActiveController extends \yii\rest\ActiveController
 {
+
+    public $enableCsrfValidation = false;
+
     /**
      * @inheritdoc
      * @var array

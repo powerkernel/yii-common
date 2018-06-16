@@ -64,7 +64,7 @@ use yii\helpers\Html;
                     <table width="100%">
                         <tr>
                             <td class="aligncenter">
-                                <img height="72" src="<?= Yii::$app->params['logos']['email'] ?>" alt="<?= Yii::$app->name ?>" />
+                                <img class="logo" height="72" src="<?= Yii::$app->params['logos']['email'] ?>" alt="<?= Yii::$app->name ?>" />
                             </td>
                         </tr>
                     </table>
