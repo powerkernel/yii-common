@@ -1,8 +1,8 @@
 {
     "name": "powerkernel/yii-common",
     "description": "Yii Common",
-    "type": "yii2-module",
-    "keywords": ["yii2","common"],
+    "type": "yii-module",
+    "keywords": ["yii","common"],
     "license": "Private",
     "authors": [
         {
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "2.1.x-dev"
+        "yiisoft/yii2": "3.0.x-dev"
     },
     "repositories": [
         {
