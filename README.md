@@ -1,5 +1,6 @@
 Yii Common
 ==========
+Common stuff for [Yii API Starter Kit](https://github.com/powerkernel/yii-api-starter-kit)
 
 Installation
 ------------
