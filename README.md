@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer --prefer-source require powerkernel/yii-common "@dev"
+composer require powerkernel/yii-common "@dev"
 ```
 
 or add
