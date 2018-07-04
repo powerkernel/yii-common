@@ -3,7 +3,7 @@
     "description": "Yii Common",
     "type": "yii-module",
     "keywords": ["yii","common"],
-    "license": "Private",
+    "license": "MIT",
     "authors": [
         {
             "name": "Harry Tang",
