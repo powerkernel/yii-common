@@ -1,21 +1,21 @@
 {
-    "name": "powerkernel/yii-common",
-    "description": "Yii Common",
-    "type": "yii-module",
-    "keywords": ["yii","common"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Harry Tang",
-            "email": "harry@powerkernel.com"
-        }
-    ],
-    "require": {
-        "yiisoft/yii2": "3.0.x-dev"
-    },
-    "autoload": {
-        "psr-4": {
-            "powerkernel\\yiicommon\\": "src"
-        }
+  "name": "powerkernel/yii-common",
+  "description": "Yii Common",
+  "type": "yii-module",
+  "keywords": [
+    "yii",
+    "common"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Harry Tang",
+      "email": "harry@powerkernel.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "powerkernel\\yiicommon\\": "src"
+    }
+  }
 }
